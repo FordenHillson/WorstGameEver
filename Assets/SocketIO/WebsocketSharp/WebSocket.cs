@@ -173,7 +173,7 @@ namespace WebSocketSharp
 
       string msg;
       if (!url.TryCreateWebSocketUri (out _uri, out msg))
-        throw new ArgumentException (msg, "url");
+    
 
       if (protocols != null && protocols.Length > 0) {
         msg = protocols.CheckIfValidProtocols ();
